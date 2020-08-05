@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #wrap {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .flexbox-container{
+            display: flex;
+            background-color: yellow;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flexbox-item {
+            width: 98%;
+            border: 3px solid #333;
+            background-color: #c2e184;
+        }
+
+        .flexbox-item-home {
+            height: 94vh;
+        }
+
+        .flexbox-item-nav {
+            height: 100px;
+            flex-grow: 2;
+        }
+
+        .flexbox-item-Iam {
+            height: 100px;
+            /* 창을 줄였을 때 남은 여백을 채워준다.  */
+            flex-grow: 1;
+            /* 순서를 정해준다. 안쓰는게 좋다. */
+            /* order: 2; */
+        }
+        .flexbox-item-portfolio {
+            height: 100px;
+        }
+        .flexbox-item-contact {
+            height: 100px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-home">home</div>
+            <div class="flexbox-item flexbox-item-nav">nav</div>
+            <div class="flexbox-item flexbox-item-Iam">I am</div>
+            <div class="flexbox-item flexbox-item-portfolio">portfolio</div>
+            <div class="flexbox-item flexbox-item-contact">contact</div>
+        </div>
+    </div>
+</body>
+
+</html>
