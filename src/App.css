@@ -1,38 +1,574 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap');
+
+html{
+  font-size: 10px;
+}
+#wrap {
+  position: absolute;
+  background-repeat : no-repeat;
+  /* margin: 0 auto; */
+}
+
+.flexbox-container{
+  position: relative;
+  display: flex;
+  background-color: yellow;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexbox-item {
+  width: 98vw;
+  border: 0.3vh solid black;
+  background-color: yellowgreen;
+}
+
+.flexbox-item-home {
+  width: 98vw;
+  min-height: 100vh;
+}
+
+.home{
+  /* 최소 너비를 지정해준다 */
+  min-width: 680px;
+  /* 모바일 표준은 360라고 한다. 나중에 도전.. */
+}
+
+
+.home-detective-img{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('images/detective.jpg');
+  background-size: cover;
+}
+.mobile-home{
+  width: 97vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-text{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 5rem;
+  line-height: 1.6;
+  /* width: 50vw; */
+  padding-left: 50vw;
+  padding-top: 13%;
+}
+
+.simplework{
+  margin-top:2%;
+  font-size:5.5rem;
+}
+.interesting{
+  margin-top:-2%;
+  margin-bottom: 2%;
+  font-size: 5.5rem;
+}
+span{
+  color: red;
+}
+
+.mobile-home-img{
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+  justify-content: flex-end;
+  height: 100px;
+  padding-top: 4vh;
+}
+.mobile-home-img-divide{
+  width: 100px;
+  background-image: url('./images/화살표2.png');
+  /* justify-content: flex-end; */
+}
+
+
+
+
+@media (max-width:1400px){
+
+ .home-text{
+   font-family: 'Do Hyeon', sans-serif;
+   font-size: 4rem;
+   line-height: 1.6;
+   /* width: 50vw; */
+   padding-top: 13vh;
+   padding-left: 60vh;
+ }
+ .simplework{
+   margin-top:2vh;
+   font-size:4.5rem;
+ }
+ .interesting{
+   margin-top:-2vh;
+   margin-bottom: 2vh;
+   font-size: 4.5rem;
+ }
+
+}
+@media (max-width:1100px){
+
+  .home-text{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.6;
+    width: 50vw;
+    padding-top: 10vh;
+    padding-left: 50vh;
+  }
+  
+  .simplework{
+    margin-top:2%;
+    font-size:4rem;
+  }
+  .interesting{
+    margin-top:-2%;
+    margin-bottom: 2%;
+    font-size: 4rem;
+  }
+
+} 
+@media (max-width:980px){
+  .home-detective-img{
+    background : white;
+  }
+  .mobile-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home-text{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 4rem;
+    line-height: 1.6;
+    width: 80%;
+    padding:0%;
+    padding-top:8vh;
+    padding-left: 8vh;
+    height: 46vh;
+  }
+  .mobile-home-img{
+    width: 100%;
+    background-image: url('images/프로젝트2.png');
+    background-size: cover;
+    height: 46vh;
+  }
+
+  .simplework{
+    margin-top:2%;
+    font-size:4.5rem;
+  }
+  .interesting{
+    margin-top:-2%;
+    margin-bottom: 2%;
+    font-size: 4.5rem;
+  }
+
+  .mobile-home-img-divide{
+    display: none;
+    /* justify-content: flex-end; */
+  }
+  
+  } 
+
+
+
+  /* nav css start  */
+
+  .flexbox-item-nav {
+    height: 80px;
+    background-color: black;
+    position:fixed;
+    top:0;
+    width: 98vw;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbtn{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 3rem;
+    color:white;
+    margin-top: 1.5vh;
+    margin-left: 1.9vw;
+    margin-right: 1.9vw;
+    text-align: center;
+  }
+
+  @media (max-width:980px){
+    nav{
+      margin: 1vw;
+    }
+  }
+
+  
+  /* Intro css start  */
+
+ 
+  .flexbox-item-Iam {
+    width:98vw;
+    height: 96vh;
+  }
+
+  .intro-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .intro-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49vw;
+    background-color: white;
+  }
+
+  .intro-right{
+    width: 49vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cv-title{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 8rem;
+    color: black;
+  }
+  .cv-contents{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 4rem;
+    color: black;
+  }
+
+  .me-img{
+    width: 440px;
+    height: 46vh;
+    background-image: url('images/me.png');
+    background-size: cover;
+  }
+
+  .cv-blank{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 5rem;
+    color: white;
+  }
+
+  .stack-img{
+    width: 80%;
+    height: 0%;
+    padding-top: 32%;
+    background-image: url('images/stack.png');
+    /* 픽셀을 안 맞추면 왜 이미지가 여러번 나타날까. */
+    background-size: cover;
+  }
+
+  .dev-img{
+    width: 80%;
+    height: 0%;
+    padding-top: 32%;
+    /* 이미지 비율 유지 */
+    background-image: url('images/stack.png');
+    background-size: cover;
+  }
+
+  @media (max-width:980px){
+    /* 왜 사이즈가 안맞을까..ㅠㅠ. */
+  .flexbox-item-Iam {
+      width:98vw;
+      height: 174vh;
+  }  
+   
+  .intro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    background-color: white;
+  }
+
+  .intro-right{
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cv-title{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 8rem;
+    color: black;
+  }
+  .cv-contents{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 4rem;
+    color: black;
+  }
+
+  .me-img{
+    width: 440px;
+    height: 46vh;
+    background-image: url('images/me.png');
+    background-size: cover;
+  }
+
+  .cv-blank{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 5rem;
+    color: white;
+  }
+
+  .stack-img{
+    width: 80%;
+    height: 0%;
+    padding-top: 32%;
+    background-image: url('images/stack.png');
+    /* 픽셀을 안 맞추면 왜 이미지가 여러번 나타날까. */
+    background-size: cover;
+  }
+
+  .dev-img{
+    width: 80%;
+    height: 0%;
+    padding-top: 32%;
+    /* 이미지 비율 유지 */
+    background-image: url('images/stack.png');
+    background-size: cover;
+  }
+  }
+
+    
+  /* portfolio css start  */
+
+  .flexbox-item-portfolio {
+    height: 96vh;
+    background: black;
+  }
+  .pro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-title{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 8rem;
+    color:white;
+    text-align: center;
+  }
+  .project-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .coming{
+    width: 30vw;
+    height: 70vh;
+    margin: 3%;
+    background-color: #fcf8f3;
+  }
+  .soon{
+    padding-top: 30vh;
+    color: black;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 8rem;
+    text-align: center;
+  }
+
+  @media (max-width:980px){
+    .flexbox-item-portfolio {
+      height: 235vh;
+      background: black;
+    }
+    .pro-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .project-title{
+      font-family: 'Do Hyeon', sans-serif;
+      font-size: 8rem;
+      color:white;
+      text-align: center;
+    }
+    .project-contents{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .coming{
+      width: 90vw;
+      height: 70vh;
+      margin: 3%;
+      background-color: #fcf8f3;
+    }
+    .soon{
+      padding-top: 30vh;
+      color: black;
+      font-family: 'Do Hyeon', sans-serif;
+      font-size: 8rem;
+      text-align: center;
+    }
+
+  }
+
+    /* portfolio css start  */
+
+.flexbox-item-contact {
+  height: 98vh;
+  background-color: white;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-title{ 
+  padding-top:10vh;
+  padding-bottom: 0.5vh;
+  color:black;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 10rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-sub{
+  padding-bottom: 1vh;
+  color:#404040;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 5rem;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-area-control{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.contact-input{
+  text-align: left;
+  width: 50vw;
+  height: 5vh;
+  font-size: 3.5rem;
+  font-family: 'Do Hyeon', sans-serif;
+  background-color: black;
+  color:white;
+}
+.contact-textarea{
+  text-align: left;
+  width: 50vw;
+  height: 30vh;
+  font-size: 3.5rem;
+  font-family: 'Do Hyeon', sans-serif;
+  background-color: black;
+  color:white;
 }
 
-.App-link {
-  color: #61dafb;
+::placeholder { 
+  color:white;
+  opacity: 1; 
+  padding-top: 1vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.button {
+  background: transparent;
+  color: black;
+  float: right;
+  font-size: 20pt;
+  font-family: 'Do Hyeon', sans-serif;
+  margin: 5px 0 0 0;
+  outline: 0;
+  padding: 10px 30px;
+}
+
+.contacts{
+  padding-top:3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacts-area-control{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+}
+.github-control{
+  width: 4.5vw;
+  height: 6.5vh;
+  padding: 4vw;
+}
+.github{
+  /* 이미지 비율 유지 */
+  width: 100%;
+  height: 0%;
+  padding-top: 100%;
+  background-image: url('images/githubLogo.png');
+  background-size: cover;
+}
+.blog-control{
+  width: 4.5vw;
+  height: 6.5vh;
+  padding: 4vw;
+}
+.blog{
+  width: 100%;
+  height: 0%;
+  padding-top: 100%;
+  /* 이미지 비율 유지 */
+  background-image: url('images/blog.png');
+  background-size: cover;
+}
+.resume-control{
+  width: 4.5vw;
+  height: 6.5vh;
+  padding: 4vw;
+}
+.resume{
+  width: 100%;
+  height: 0%;
+  padding-top: 100%;
+  /* 이미지 비율 유지 */
+  background-image: url('images/resume.jpg');
+  background-size: cover;
+}
+.footer{
+  padding-top: 3vh;
+  color:#999999;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 4rem;
+  text-align: center;
 }
