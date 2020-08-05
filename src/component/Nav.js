@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-      Switch,
-      Route,
-      Link,
-      NavLink,
-      useRouteMatch,
-      useParams
-    } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 //Link를 사용해주면 리로드하지 않는다. 
 
@@ -23,6 +16,7 @@ const Nav = (props) => {
                   <NavLink exact className="navbtn" to = "/intro">I am</NavLink>
                   <NavLink exact className="navbtn" to = "/portfolio">PORTFOLIO</NavLink>
                   <NavLink exact className="navbtn" to = "/contact">CONTACT</NavLink>
+                  <NavLink exact className="navbtn" to = "/test">Test</NavLink>
             </nav>
             </div>
       );

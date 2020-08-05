@@ -4,15 +4,21 @@ import HOME from './HOME'
 import Contact from './Contact';
 import PORTFOLIO from './Portfolio';
 import Intro from './Intro'
-import {
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom"
+import Test from './Test'
+import { Switch,Route } from "react-router-dom"
 
 class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = { users: []}
+  }
+
+  componentDidMount(){
+    fetch('http://localhost:3001/users')
+    .then(res => res.json())
+    .then(users => this.setState({users}))
+  }
+
   render() {
 
     return (
@@ -30,8 +36,14 @@ class App extends React.Component {
           <Route exact path="/contact">
             <Contact />
           </Route>
+          <Route exact path="/test">
+            <Test user = {this.state.users}/>
+          </Route>
         </Switch>
+      
       </div>
+
+
     )
   }
 }

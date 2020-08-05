@@ -23,7 +23,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="contacts">
+                <div className="contacts" >
                     <div className="contacts-area-control">
                         <a className="github-control"
                             href="https://github.com/dasom08?tab=repositories">
@@ -34,9 +34,10 @@ const Contact = () => {
                             href="https://daydevlog.tistory.com/category/WIL">
                             <div className="blog"></div>
                         </a>
-                        <div className="resume-control">
+                        <a className="resume-control" 
+                           href="https://drive.google.com/file/d/1VzjOXvqwz_P7lRDj6it7Uy5rV0fsbHFN/view?usp=sharing">
                             <div className="resume"></div>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
