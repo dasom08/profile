@@ -207,8 +207,34 @@ span{
   }
 
   @media (max-width:980px){
+
+    .active {
+      background-color: red;
+    }
+  
+    .flexbox-item-nav {
+      height: 80px;
+      background-color: black;
+      position:fixed;
+      top:0;
+      width: 98vw;
+    }
+  
     nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       margin: 1vw;
+    }
+  
+    .navbtn{
+      font-family: 'Do Hyeon', sans-serif;
+      font-size: 3rem;
+      color:white;
+      margin-top: 1.5vh;
+      margin-left: 1.9vw;
+      margin-right: 1.9vw;
+      text-align: center;
     }
   }
 

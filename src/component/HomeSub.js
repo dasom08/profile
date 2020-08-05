@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom"
 
 const HomeSub = () => {
   return (
@@ -14,9 +15,9 @@ const HomeSub = () => {
             <div className="interesting"><span>흥미로운 일</span>로 가득 채우는 하루."</div>
             <div>를 꿈꾸고 있습니다.</div>
           </div>
-          <div className="mobile-home-img">
+          <NavLink className="mobile-home-img" to = "/portfolio">
            <div className="mobile-home-img-divide"></div>
-          </div>
+          </NavLink>
         </div>
       </div>
     </section>
