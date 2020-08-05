@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4b853ec0.chunk.css",
+    "main.js": "/static/js/main.14539556.chunk.js",
+    "main.js.map": "/static/js/main.14539556.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc36b19e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc36b19e.js.map",
+    "static/js/2.21105e8c.chunk.js": "/static/js/2.21105e8c.chunk.js",
+    "static/js/2.21105e8c.chunk.js.map": "/static/js/2.21105e8c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7023b7a97246ecde42aede0cc335e42b.js": "/precache-manifest.7023b7a97246ecde42aede0cc335e42b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4b853ec0.chunk.css.map": "/static/css/main.4b853ec0.chunk.css.map",
+    "static/js/2.21105e8c.chunk.js.LICENSE.txt": "/static/js/2.21105e8c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/프로젝트2.aac76233.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc36b19e.js",
+    "static/js/2.21105e8c.chunk.js",
+    "static/css/main.4b853ec0.chunk.css",
+    "static/js/main.14539556.chunk.js"
+  ]
+}
