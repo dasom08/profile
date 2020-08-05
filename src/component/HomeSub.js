@@ -1,8 +1,6 @@
 import React from 'react';
-import detective from '../images/detective.jpg'
-// src={detective} alt="home"
 
-const Home = () => {
+const HomeSub = () => {
   return (
     <section className="home">
       {/* flexbox-item-home 높이를 가져오고 나서 home-detective-img 적용 */}
@@ -19,11 +17,10 @@ const Home = () => {
           <div className="mobile-home-img">
            <div className="mobile-home-img-divide"></div>
           </div>
-          
         </div>
       </div>
     </section>
   )
 }
 
-export default Home;
+export default HomeSub;
